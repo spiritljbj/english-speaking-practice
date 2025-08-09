@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>进阶英语口语练习</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 18px; background:#f5f7fb; }
+    .card { background:white; border-radius:12px; padding:16px; box-shadow:0 4px 18px rgba(0,0,0,0.06); max-width:820px; margin:16px auto; }
+    h1 { margin:0 0 8px 0; }
+    .controls { display:flex; gap:8px; margin:12px 0 8px 0; }
+    button { padding:8px 12px; border-radius:8px; border: none; cursor:pointer; }
+    .log { max-height:320px; overflow:auto; margin-top:12px; }
+    .entry { padding:8px; border-bottom:1px solid #eee; }
+    .user { color:#0b5; }
+    .ai { color:#06c; }
+    select, textarea { padding:8px; border-radius:8px; border:1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>进阶英语口语练习</h1>
+    <p>场景：
+      <select id="scene">
+        <option value="restaurant">餐厅点餐</option>
+        <option value="shopping">购物询价</option>
+        <option value="asking_directions">问路</option>
+        <option value="hotel">酒店入住</option>
+        <option value="small_talk">日常聊天</option>
+      </select>
+    </p>
+
+    <div class="controls">
+      <button id="start">🎤 开始说话</button>
+      <button id="stop" disabled>⏹ 停止</button>
+      <button id="replay" disabled>🔊 播放 AI 回复</button>
+      <button id="clear">清除记录</button>
+    </div>
+
+    <div id="status">状态：等待操作</div>
+
+    <div class="log" id="log"></div>
+  </div>
+
+<scr
+
+
